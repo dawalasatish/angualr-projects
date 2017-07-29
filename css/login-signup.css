@@ -1,0 +1,34 @@
+/* Login page css starts*/
+.bg-image{
+    background-image: url('../images/bg-image/image2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:65px;
+}
+.panel-heading {
+    padding: 5px 15px;
+}
+
+.panel-footer {
+	padding: 1px 15px;
+	color: #A0A0A0;
+}
+
+.profile-img {
+	margin: 0 auto 10px;
+	display: block;
+}
+.signup{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+/* Login page css ends */
+/*signup page css starts here */
+.bg-image1{
+    background-image: url('../images/bg-image/image4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:65px;
+}
+.services {margin-left: 61%;}
+/*signup page css ends here */

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="CollapseDemoCtrl">
+<head>
+  <title>Sri Sai Clinic -- We Care Your Health</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" type="text/css" href="css/login-signup.css">
+</head>
+<body>
+<!--- Navbar Starts Starts Here -->
+<div class="navigation">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle menu1" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand logo" href="#"><img src="images/logo.png" alt="logo"/></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right p-t-55">
+        <li ng-class="{active : isActive('/')}"><a href="#">Home</a></li>
+        <li class="dropdown show-on-hover">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features</span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Easy to use</a></li>
+            <li><a href="#">Easy Appointment Management</a></li>
+            <li><a href="#">Role Managament</a></li>
+            <li><a href="#">Mutlispeciality clinic</a></li>
+            <li><a href="#">Single Clinic</a></li>
+            <li><a href="#">Free For Lifetime</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Pricing</a></li>
+        <li><a ui-sref="signup" ng-class="{active : isActive('/signup')}" ng-hide="isActive('/signup')"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a ui-sref="login" ng-class="{active : isActive('/login')}" ng-hide="isActive('/login')"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+    </div>
+  </div>
+</nav>
+</div>
+<!-- navbar ends here -->
+<div ui-view></div>
+<div class="clearfix"></div>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="/js/script.js"></script>
+  <script type="text/javascript" src="/js/router.js"></script>
+  <script type="text/javascript" src="/js/homecontroller.js"></script>
+</body>
+</html>

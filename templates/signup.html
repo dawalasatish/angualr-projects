@@ -1,0 +1,46 @@
+<div class="container-fluid bg-image1">
+	<div class="container">
+		<div class="row signup">
+			<div class="col-xs-12 col-sm-12 col-md-4 well well-sm services">
+            <legend><a href="#"><i class="glyphicon glyphicon-globe"></i></a> Sign up!</legend>
+            <form action="#" method="post" name="sampleForm" role="form">
+            <div>
+            <input class="form-control" name="firstname" placeholder="First Name" type="text"
+                        required autofocus ng-pattern="/^([a-zA-Z]+\s)*[a-zA-Z]+$/" />
+                      <span ng-show="sampleForm.firstname.$error.required">Required</span>
+                      <span ng-show="!sampleForm.firstname.$error.pattern && form.firstname.$dirty">All are in alphabetical.</span>
+            </div>
+            <div>
+            <input class="form-control" name="email" placeholder="Your Email" required type="email" />
+            <span ng-show="sampleForm.email.$error.required">Required</span>
+                      <span ng-show="!sampleForm.email.$error.pattern && sampleForm.email.$dirty">All are in alphabetical.</span>
+            </div>
+            <div><input class="form-control" name="password" placeholder="New Password" required type="password" /></div>
+            <div><input class="form-control" name="reenterpassword" required="" placeholder="Re-enter password" type="password" /></div>
+            <div><input class="form-control" name="Mobilenumber" required="" placeholder="Mobile Number" type="number" /></div>
+            <div>
+                <select class="form-control m-b-10" name="speciality" required="" id="speciality">
+                  <option>Select Speciality</option>
+                </select>
+            </div>
+            <div><input class="form-control" name="Qualification" required="" placeholder="Qualification" type="text" /></div>
+            <div><input class="form-control" name="Address" required="" placeholder="Address" type="text" /></div>
+            <a ui-sref="login"><button class="btn btn-lg btn-primary btn-block" type="submit">
+                Sign up</button></a>
+            </form>
+        </div>
+		</div>
+	</div>
+</div>
+<!--footer starts here -->
+<div class="container-fluid footer">
+  <div class="container">
+    <div class="row">
+      <div class="m-t-20">
+            <p class="text-center pull-left">&copy; All Rights are Reserved by <span style="color: #fff;">SU TechnoSoft Solutions.</span></p>
+            <p class="text-center pull-right">Software Designed & Developed by <span style="color: #fff;">SU TechnoSoft Solutions.</span></p>
+        </div>
+    </div>
+  </div>
+</div>
+<!--footer ends here -->
