@@ -128,6 +128,10 @@ border-radius: 17px;
 .secured h5{
   color: #B7C7C9;
 }
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+   outline: none !important;
+    outline-offset: -2px;
+  }
 .secured p{
   color: #B7C7C9;
 }
